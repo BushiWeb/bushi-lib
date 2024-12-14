@@ -1,0 +1,120 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "useIgnoreFile": false
+    },
+    "files": {
+        "ignoreUnknown": false,
+        "ignore": [
+            "node_modules",
+            ".pnp",
+            ".pnp.js",
+            ".yarn/install-state.gz",
+            "coverage",
+            ".next/",
+            "out/",
+            "build",
+            "dist",
+            "dist-ssr",
+            ".DS_Store",
+            "*.pem",
+            ".env*.local",
+            "*.local",
+            ".env*",
+            "*.tsbuildinfo",
+            "next-env.d.ts",
+            "logs",
+            "*.log",
+            "npm-debug.log*",
+            "yarn-debug.log*",
+            "yarn-error.log*",
+            "pnpm-debug.log*",
+            "lerna-debug.log*",
+            "*storybook.log",
+            ".vscode/*",
+            "!.vscode/extensions.json",
+            ".idea",
+            "*.suo",
+            "*.ntvs*",
+            "*.njsproj",
+            "*.sln",
+            "*.sw?",
+            "*.code-workspace",
+            "references",
+            ".eslintcache",
+            ".prettier-cache",
+            ".stylelintcache"
+        ]
+    },
+    "organizeImports": {
+        "enabled": true
+    },
+    "formatter": {
+        "enabled": true,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineEnding": "crlf"
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "complexity": {
+                "noExcessiveCognitiveComplexity": "error",
+                "noUselessStringConcat": "error",
+                "useDateNow": "error"
+            },
+            "correctness": {
+                "noUnusedFunctionParameters": "warn",
+                "noUnusedImports": {
+                    "level": "warn",
+                    "fix": "unsafe"
+                },
+                "noUnusedPrivateClassMembers": "warn",
+                "noUnusedVariables": "warn"
+            },
+            "nursery": {
+                "noEnum": "error"
+            },
+            "performance": {
+                "noBarrelFile": "error"
+            },
+            "style": {
+                "noYodaExpression": "error",
+                "useBlockStatements": "error"
+            },
+            "suspicious": {
+                "useAwait": "error"
+            }
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "single",
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "lineEnding": "crlf"
+        }
+    },
+    "json": {
+        "formatter": {
+            "enabled": true,
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "lineEnding": "crlf"
+        }
+    },
+    "css": {
+        "formatter": {
+            "enabled": true,
+            "indentStyle": "space",
+            "indentWidth": 4,
+            "lineEnding": "crlf"
+        },
+        "linter": {
+            "enabled": true
+        }
+    }
+}

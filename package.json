@@ -1,0 +1,130 @@
+{
+    "name": "bushi-lib",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "style:format": "biome format --write ./",
+        "style:lint": "biome lint --write --error-on-warnings ./",
+        "style:all": "biome check --write --error-on-warnings ./",
+        "commit": "pnpm style:all && cz",
+        "commit:simple": "cz"
+    },
+    "dependencies": {
+        "@pigment-css/react": "^0.0.28",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
+        "@chromatic-com/storybook": "3.2.2",
+        "@pigment-css/vite-plugin": "^0.0.28",
+        "@storybook/addon-essentials": "8.4.7",
+        "@storybook/addon-interactions": "8.4.7",
+        "@storybook/addon-onboarding": "8.4.7",
+        "@storybook/blocks": "8.4.7",
+        "@storybook/react": "8.4.7",
+        "@storybook/react-vite": "8.4.7",
+        "@storybook/test": "8.4.7",
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^16.1.0",
+        "@testing-library/user-event": "^14.5.2",
+        "@types/node": "^22.10.2",
+        "@types/react": "^19.0.1",
+        "@types/react-dom": "^19.0.2",
+        "@vitejs/plugin-react": "^4.3.4",
+        "commitizen": "^4.3.1",
+        "cz-conventional-changelog": "^3.3.0",
+        "globals": "^15.12.0",
+        "jsdom": "^25.0.1",
+        "storybook": "8.4.7",
+        "typescript": "~5.6.2",
+        "typescript-eslint": "^8.15.0",
+        "vite": "^6.0.1",
+        "vite-tsconfig-paths": "^5.1.4",
+        "vitest": "^2.1.8"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog",
+            "maxHeaderWidth": 50,
+            "maxLineWidth": 72,
+            "defaultType": "feat",
+            "types": {
+                "✨feat": {
+                    "description": "A new feature",
+                    "title": "Features"
+                },
+                "🐛fix": {
+                    "description": "A bug fix",
+                    "title": "Bug fix"
+                },
+                "📚docs": {
+                    "description": "Changes made only to the documentation",
+                    "title": "Documentation"
+                },
+                "🎨design": {
+                    "description": "Designing the product",
+                    "title": "Design"
+                },
+                "🥻style": {
+                    "description": "Alteration that don't change the code intent (white space, formatting, missing semi-colons, ...)",
+                    "title": "Code styling"
+                },
+                "♻️ refactor": {
+                    "description": "An update to the code that neither adds features nor fixes bugs",
+                    "title": "Code refactoring"
+                },
+                "⚡perf": {
+                    "description": "A performance enhancing tweak to the code",
+                    "title": "Performance improvements"
+                },
+                "🧪test": {
+                    "description": "Addition or update of tests",
+                    "title": "Tests"
+                },
+                "⚒️ build": {
+                    "description": "Modification to the build system or to external dependencies",
+                    "title": "Builds"
+                },
+                "🚀ci": {
+                    "description": "Modification to the CI configuration scripts and files",
+                    "title": "Continuous Integration"
+                },
+                "⚙️ chore": {
+                    "description": "Other updates that don't alter the test or source files",
+                    "title": "Chores"
+                },
+                "🗑️ revert": {
+                    "description": "Reverts a previous commit",
+                    "title": "Reverts commit"
+                },
+                "🎉init": {
+                    "description": "Initial commit",
+                    "title": "Initial commit"
+                },
+                "📦metadata": {
+                    "description": "Update to the metadata (package.json, ...)",
+                    "title": "Update metadata"
+                },
+                "🔃dependencies": {
+                    "description": "Update to dependencies",
+                    "title": "Dependencies"
+                },
+                "🏷️ release": {
+                    "description": "Release a new version",
+                    "title": "Release"
+                }
+            }
+        }
+    }
+}
