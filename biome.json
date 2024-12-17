@@ -99,6 +99,9 @@
         }
     },
     "json": {
+        "parser": {
+            "allowComments": true
+        },
         "formatter": {
             "enabled": true,
             "indentStyle": "space",
