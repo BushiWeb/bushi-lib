@@ -137,5 +137,8 @@
         "@pigment-css/react": "^0.0.28",
         "react": "^19.0.0",
         "react-dom": "^19.0.0"
+    },
+    "dependencies": {
+        "clsx": "^2.1.1"
     }
 }

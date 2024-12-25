@@ -7,6 +7,7 @@ import dts from 'vite-plugin-dts';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
+import { peerDependencies } from './package.json';
 
 export default defineConfig({
     plugins: [
@@ -14,7 +15,11 @@ export default defineConfig({
         tsconfigPaths(),
         react(),
         libInjectCss(),
-        dts({ include: ['lib'] }),
+        dts({
+            include: ['lib'],
+            exclude: ['**/*.stories.{ts, tsx}', '**/*.test.{ts, tsx}'],
+            tsconfigPath: './tsconfig.lib.json',
+        }),
     ],
     test: {
         environment: 'jsdom',
@@ -27,11 +32,15 @@ export default defineConfig({
             formats: ['es'],
         },
         rollupOptions: {
-            external: ['react', 'react/jsx-runtime'],
+            external: Object.keys(peerDependencies),
             input: Object.fromEntries(
                 glob
                     .sync('lib/**/*.{ts,tsx}', {
-                        ignore: ['lib/**/*.d.ts', 'lib/**/*.stories.tsx'],
+                        ignore: [
+                            'lib/**/*.d.ts',
+                            'lib/**/*.stories.{ts,tsx}',
+                            'lib/**/*.test.{ts,tsx}',
+                        ],
                     })
                     .map((file) => [
                         // The name of the entry point
@@ -48,6 +57,10 @@ export default defineConfig({
             output: {
                 assetFileNames: 'assets/[name][extname]',
                 entryFileNames: '[name].js',
+                globals: {
+                    react: 'React',
+                    'react-dom': 'ReactDOM',
+                },
             },
         },
     },
