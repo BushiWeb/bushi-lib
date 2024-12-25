@@ -34,12 +34,12 @@ export interface ButtonProps
     loadingText?: string;
 }
 
-export function Button({
+export const Button = ({
     children,
     startIcon,
     endIcon,
     ...props
-}: ButtonProps) {
+}: ButtonProps) => {
     return (
         <button {...props} className={clsx(button)}>
             {startIcon}
@@ -47,4 +47,4 @@ export function Button({
             {endIcon}
         </button>
     );
-}
+};

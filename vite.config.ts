@@ -32,7 +32,7 @@ export default defineConfig({
             formats: ['es'],
         },
         rollupOptions: {
-            external: Object.keys(peerDependencies),
+            external: Object.keys(peerDependencies).concat('react/jsx-runtime'),
             input: Object.fromEntries(
                 glob
                     .sync('lib/**/*.{ts,tsx}', {
