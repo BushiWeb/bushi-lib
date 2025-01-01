@@ -1,0 +1,60 @@
+@keyframes enter-bottom {
+    0% {
+        opacity: 0;
+        scale: 1 0;
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform-origin: bottom;
+    }
+}
+
+@keyframes enter-left {
+    0% {
+        opacity: 0;
+        scale: 0 1;
+        transform-origin: left;
+    }
+
+    100% {
+        transform-origin: left;
+    }
+}
+
+@keyframes backdrop-enter {
+    0% {
+        background-color: color-mix(in srgb, --color-backdrop 0, transparent);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        scale: 0;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 150;
+        opacity: 0;
+    }
+}
+
+@keyframes enter-middle {
+    0% {
+        opacity: 0;
+        scale: 1 0;
+        transform-origin: top;
+    }
+
+    100% {
+        transform-origin: top;
+    }
+}
+
+@keyframes grow-from-top {
+    0% {
+        opacity: 0;
+        block-size: 0;
+    }
+}

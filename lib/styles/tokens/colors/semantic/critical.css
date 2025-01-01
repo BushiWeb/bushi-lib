@@ -1,0 +1,6 @@
+/* Critical colors */
+:root {
+    --color-critical-container-solid: #ba0426;
+    --color-critical-container: #ffbeba;
+    --color-critical-faded: #fcdcda;
+}

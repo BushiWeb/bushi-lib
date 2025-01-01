@@ -1,0 +1,12 @@
+/* Z-index tokens */
+:root {
+    --z-index-abyss: -50;
+    --z-index-sunken: -10;
+    --z-index-normal: 0;
+    --z-index-raised: 10;
+    --z-index-static: 50;
+    --z-index-tooltip: 100;
+    --z-index-notification: 500;
+    --z-index-backdrop: 999;
+    --z-index-modal: 1000;
+}

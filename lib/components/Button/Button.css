@@ -1,0 +1,10 @@
+.Button {
+    appearance: none;
+    border-radius: 1rem;
+    min-block-size: 3rem;
+    padding-inline: 1.5em;
+    padding-block: 0.5em;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border: none;
+}

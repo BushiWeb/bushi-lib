@@ -1,0 +1,14 @@
+/* Accent font family and associated tokens */
+:root {
+    /* Uses Georgia, relative x-height of 0.545 */
+    --font-family-accent: Georgia, "Times New Roman", "American Typewriter",
+        serif;
+
+    /* Font size */
+    --font-size-ratio-accent: 1.075;
+
+    /* Font weight */
+    --font-weight-light-accent: 300;
+    --font-weight-normal-accent: 400;
+    --font-weight-bold-accent: 700;
+}

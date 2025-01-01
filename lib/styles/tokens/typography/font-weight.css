@@ -1,0 +1,7 @@
+/* Default font weight, used with Arial */
+
+:root {
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}

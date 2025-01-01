@@ -1,0 +1,14 @@
+/* Text sizing scale */
+:root {
+    --size-body-s: 45ch;
+    --size-body-m: 66ch;
+    --size-body-l: 80ch;
+
+    --size-s-heading-s: calc(var(--size-body-s) / 2);
+    --size-s-heading-m: calc(var(--size-body-m) / 2);
+    --size-s-heading-l: calc(var(--size-body-l) / 2);
+
+    --size-l-heading-m: calc(var(--size-body-m) / 3);
+    --size-l-heading-l: calc(var(--size-body-l) / 3);
+    --size-l-heading-s: calc(var(--size-body-s) / 3);
+}

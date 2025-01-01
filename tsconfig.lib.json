@@ -1,4 +1,10 @@
 {
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@lib/*": ["./lib/*"]
+        }
+    },
     "extends": "./tsconfig.app.json",
     "include": ["lib"]
 }

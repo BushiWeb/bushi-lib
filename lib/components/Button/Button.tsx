@@ -1,50 +1,46 @@
-import { css } from '@pigment-css/react';
 import { clsx } from 'clsx';
+import './Button.css';
 
-const button = css({
-    appearance: 'none',
-    border: '0',
-    backgroundColor: 'lavender',
-    color: 'black',
-    borderRadius: '6px',
-    paddingInline: '24px',
-    paddingBlock: '4px',
-    fontSize: '1rem',
-    fontWeight: 'bold',
-});
+export interface ButtonProps extends React.ComponentProps<'button'> {
+    // Icons props
+    icon?: React.ReactNode; // Change to typeof Icon when ready
+    iconPosition?: 'start' | 'end';
+    isIconButton?: boolean;
 
-export interface ButtonProps
-    extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    size?: 'xs' | 'sm' | 'md' | 'lg';
-    variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
-    color?:
-        | 'default'
-        | 'accent'
-        | 'highlight'
-        | 'info'
-        | 'caution'
-        | 'warning'
-        | 'critical'
-        | 'positive'
-        | 'magic'
-        | 'discovery';
-    startIcon?: React.ReactElement;
-    endIcon?: React.ReactElement;
+    // Loading props
     isLoading?: boolean;
-    loadingText?: string;
+    loaderPosition?: 'start' | 'end';
+    loaderType?: string; // Change to the list of available loaders
+
+    // Button styling
+    size?: 'xs' | 's' | 'm' | 'l' | 'xl';
+    block?: boolean;
+    elevated?: boolean;
+    reversed?: boolean;
+
+    // Presets
+    variant?: 'default';
 }
 
 export const Button = ({
     children,
-    startIcon,
-    endIcon,
+    icon,
+    iconPosition = 'start',
+    isIconButton = false,
+    isLoading = false,
+    loaderPosition = 'start',
+    loaderType,
+    size = 'm',
+    block = false,
+    elevated = false,
+    reversed = false,
+    variant = 'default',
+    className,
     ...props
 }: ButtonProps) => {
     return (
-        <button {...props} className={clsx(button)}>
-            {startIcon}
+        <button {...props} className={clsx('Button')}>
             {children}
-            {endIcon}
         </button>
     );
 };

@@ -1,6 +1,5 @@
 import { extname, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { pigment } from '@pigment-css/vite-plugin';
 import react from '@vitejs/plugin-react';
 import { glob } from 'glob';
 import dts from 'vite-plugin-dts';
@@ -11,7 +10,6 @@ import { peerDependencies } from './package.json';
 
 export default defineConfig({
     plugins: [
-        pigment(),
         tsconfigPaths(),
         react(),
         libInjectCss(),

@@ -1,0 +1,13 @@
+/* Default font family and associated tokens */
+:root {
+    /* Uses Verdana, relative x-height of 0.545 */
+    --font-family-default: Verdana, Arial, Optima, system-ui, sans-serif;
+
+    /* Font size */
+    --font-size-ratio-default: 0.952;
+
+    /* Font weight */
+    --font-weight-light-default: 300;
+    --font-weight-normal-default: 400;
+    --font-weight-bold-default: 700;
+}

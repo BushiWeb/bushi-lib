@@ -1,0 +1,10 @@
+/* State properties */
+:root {
+    --state-hover-opacity: 5%;
+    --state-select-opacity: 10%;
+    --state-press-opacity: 15%;
+    --state-drag-opacity: 15%;
+
+    --state-disable-opacity: 80%;
+    --state-disable-foreground-opacity: 70%;
+}

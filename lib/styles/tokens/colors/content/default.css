@@ -1,0 +1,14 @@
+/* Default colors */
+:root {
+    /* Background */
+    --color-foundation: #fcf8f5;
+    --color-surface-1: #ffffff;
+    --color-surface-2: #fcf8f5;
+    --color-surface-3: #f9f0ea;
+    --color-surface-4: #f5e8e2;
+    --color-surface-5: #f0e1d9;
+
+    /* Text */
+    --color-surface-text-bold: #15100e;
+    --color-surface-text: #54443a;
+}

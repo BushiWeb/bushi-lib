@@ -1,0 +1,14 @@
+/* Code font family and associated tokens */
+:root {
+    /* Uses Georgia, relative x-height of 0.545 */
+    --font-family-code: "Lucida Console", Monaco, monospace;
+
+    /* Font size */
+    --font-size-ratio-code: 0.98;
+    --font-size-ratio-code-bold: 0.95;
+
+    /* Font weight */
+    --font-weight-light-code: 300;
+    --font-weight-normal-code: 400;
+    --font-weight-bold-code: 700;
+}

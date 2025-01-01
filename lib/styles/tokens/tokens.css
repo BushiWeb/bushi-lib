@@ -1,0 +1,74 @@
+/***************
+ * Breakpoints *
+ ***************/
+
+/* @custom-media --mobile (width <= 639px);
+@custom-media --tablet (640pw <= width);
+@custom-media --laptop (1024px <= width);
+@custom-media --desktop (1280px <= width); */
+
+:root {
+    /***************
+     *   Z-index   *
+     ***************/
+    --z-low-all: -999;
+    --z-below: -1;
+    --z-normal: 0;
+    --z-above: 1;
+    --z-above-all: 999;
+    --z-backdrop: 1000;
+    --z-popover: 1001;
+    --z-popover-above: 1002;
+
+    /********************************
+     *   Transition and animation   *
+     ********************************/
+
+    /* Duration and delay */
+    --duration-none: 0ms;
+    --duration-s-1: 50ms;
+    --duration-s-2: 100ms;
+    --duration-s-3: 150ms;
+    --duration-s-4: 200ms;
+    --duration-m-1: 250ms;
+    --duration-m-2: 300ms;
+    --duration-m-3: 350ms;
+    --duration-m-4: 400ms;
+    --duration-l-1: 450ms;
+    --duration-l-2: 500ms;
+    --duration-l-3: 550ms;
+    --duration-l-4: 600ms;
+    --duration-xl-1: 700ms;
+    --duration-xl-2: 800ms;
+    --duration-xl-3: 900ms;
+    --duration-xl-4: 1000ms;
+
+    /* Timing functions */
+    --ease-high: cubic-bezier(0.4, 0, 0, 1);
+    --ease-high-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+    --ease-high-accelerat: cubic-bezier(0.3, 0, 0.8, 0.15);
+    --ease-low: cubic-bezier(0.2, 0, 0, 1);
+    --ease-low-decelerate: cubic-bezier(0, 0, 0, 1);
+    --ease-low-accelerate: cubic-bezier(0.3, 0, 1, 1);
+
+    /***************
+     *   Shadows   *
+     ***************/
+    /* stylelint-disable-next-line rem-over-px/rem-over-px */
+    --elevation-1: 3px 3px 3px 0px rgb(0 0 0 / 20%), 6px 6px 6px 0px
+        rgb(0 0 0 / 10%);
+    /* stylelint-disable-next-line rem-over-px/rem-over-px */
+    --elevation-2:
+        3px 3px 3px 0px rgb(0 0 0 / 20%),
+        6px 6px 6px 0px rgb(0 0 0 / 10%), 12px 12px 12px 0px rgb(0 0 0 / 5%);
+    /* stylelint-disable-next-line rem-over-px/rem-over-px */
+    --elevation-3:
+        3px 3px 3px 0px rgb(0 0 0 / 20%),
+        6px 6px 6px 0px rgb(0 0 0 / 10%), 12px 12px 12px 0px rgb(0 0 0 / 5%),
+        24px 24px 24px 0px rgb(0 0 0 / 10%);
+
+    /***************
+     *   Opacity   *
+     ***************/
+    --opacity-backdrop: 0.65;
+}

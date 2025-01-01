@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-foundation);
+
+    &:has(dialog[open]) {
+        overflow: hidden;
+        scrollbar-gutter: stable;
+    }
+}
+
+#main {
+    scroll-margin-block-start: var(--dimension-32);
+    flex-grow: 1;
+}

@@ -1,0 +1,25 @@
+/* Shadow elevation tokens */
+:root {
+    --elevation-sunken: none;
+    --elevation-level: none;
+    --elevation-raised: 0.2px 0.4px 0.5px rgba(0, 0, 0, 0.3), 0.7px 1.3px 1.8px
+        rgba(0, 0, 0, 0.179), 3px 6px 8px rgba(0, 0, 0, 0.121);
+    --elevation-overlay:
+        0.4px 0.7px 0.6px rgba(0, 0, 0, 0.35),
+        1px 1.9px 1.8px rgba(0, 0, 0, 0.228),
+        2.4px 4.5px 4.2px rgba(0, 0, 0, 0.175),
+        8px 15px 14px rgba(0, 0, 0, 0.122);
+    --elevation-raised-high:
+        0.5px 1px 1px rgba(0, 0, 0, 0.35),
+        1.4px 2.6px 2.4px rgba(0, 0, 0, 0.241),
+        2.8px 5.3px 5px rgba(0, 0, 0, 0.195),
+        5.8px 11px 10.2px rgba(0, 0, 0, 0.155),
+        16px 30px 28px rgba(0, 0, 0, 0.109);
+    --elevation-overlay-high:
+        0.8px 1.5px 1.8px rgba(0, 0, 0, 0.35),
+        1.9px 3.6px 4.3px rgba(0, 0, 0, 0.252),
+        3.6px 6.8px 8.1px rgba(0, 0, 0, 0.209),
+        6.5px 12.1px 14.5px rgba(0, 0, 0, 0.175),
+        12.1px 22.6px 27.2px rgba(0, 0, 0, 0.141),
+        29px 54px 65px rgba(0, 0, 0, 0.098);
+}

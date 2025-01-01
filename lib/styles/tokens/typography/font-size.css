@@ -1,0 +1,49 @@
+/* Default font size, used with Arial (0.519 relative x-height) */
+
+:root {
+    /* Default ratio of 1.2 */
+    --font-base-size: 16px;
+
+    --font-size-xs: 0.694rem;
+    --font-size-s: 0.833rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.2rem;
+    --font-size-xl: 1.44rem;
+    --font-size-2xl: 1.728rem;
+    --font-size-3xl: 2.074rem;
+    --font-size-4xl: 2.488rem;
+    --font-size-5xl: 2.986rem;
+    --font-size-6xl: 3.583rem;
+
+    @media (width >= 1024px) {
+        /* Default ratio of 1.25 */
+        --font-base-size: 16px;
+
+        --font-size-xs: 0.64rem;
+        --font-size-s: 0.8rem;
+        --font-size-m: 1rem;
+        --font-size-l: 1.25rem;
+        --font-size-xl: 1.563rem;
+        --font-size-2xl: 1.953rem;
+        --font-size-3xl: 2.441rem;
+        --font-size-4xl: 3.052rem;
+        --font-size-5xl: 3.815rem;
+        --font-size-6xl: 4.768rem;
+    }
+
+    @media (width >= 1200px) {
+        /* Default ratio of 1.333 */
+        --font-base-size: 18px;
+
+        --font-size-xs: 0.563rem;
+        --font-size-s: 0.75rem;
+        --font-size-m: 1rem;
+        --font-size-l: 1.333rem;
+        --font-size-xl: 1.777rem;
+        --font-size-2xl: 2.369rem;
+        --font-size-3xl: 3.157rem;
+        --font-size-4xl: 4.209rem;
+        --font-size-5xl: 5.610rem;
+        --font-size-6xl: 7.478rem;
+    }
+}

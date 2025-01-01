@@ -1,0 +1,8 @@
+@layer settings, reset, base, composition, utility;
+
+@import url("./styles/tokens/index.css") layer(settings);
+@import url("./styles/animations/index.css") layer(settings);
+@import url("./styles/reset.css") layer(reset);
+@import url("./styles/base.css") layer(base);
+@import url("./styles/composition/index.css") layer(composition);
+@import url("./styles/utility/index.css") layer(utility);

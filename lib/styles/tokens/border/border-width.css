@@ -1,0 +1,7 @@
+/* Border width scale */
+:root {
+    --border-width-none: 0;
+    --border-width-s: 1px;
+    --border-width-m: 0.125rem;
+    --border-width-l: 0.25rem;
+}

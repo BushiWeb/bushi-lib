@@ -1,0 +1,10 @@
+/* Grid sizes */
+:root {
+    --grid-50: 2;
+    --grid-33: 3;
+    --grid-25: 4;
+    --grid-20: 5;
+    --grid-10: 10;
+    --grid-8: 12;
+    --grid-6: 16;
+}

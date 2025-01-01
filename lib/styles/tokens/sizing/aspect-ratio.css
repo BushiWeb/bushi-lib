@@ -1,0 +1,16 @@
+/* Available aspect ratios */
+:root {
+    --aspect-ratio-square: 1;
+
+    --aspect-ratio-short: 4 / 3;
+    --aspect-ratio-medium: 3 / 2;
+    --aspect-ratio-long: 16 / 9;
+    --aspect-ratio-double: 2;
+    --aspect-ratio-golden: 1.618;
+
+    --aspect-ratio-short-vert: 3 / 4;
+    --aspect-ratio-medium-vert: 2 / 3;
+    --aspect-ratio-long-vert: 9 / 16;
+    --aspect-ratio-double-vert: 1 / 2;
+    --aspect-ratio-golden-vert: 1 / 1.618;
+}

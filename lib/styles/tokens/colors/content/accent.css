@@ -1,0 +1,7 @@
+/* Accent colors */
+:root {
+    /* Background */
+    --color-accent-container-solid: #86590c;
+    --color-accent-container: #fec67b;
+    --color-accent-container-faded: #fddfbb;
+}

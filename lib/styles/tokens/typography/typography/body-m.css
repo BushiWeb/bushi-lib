@@ -1,0 +1,21 @@
+/* Medium body typography properties */
+:root {
+    --typography-body-s-family: var(--font-family-default);
+    --typography-body-s-size: calc(
+        var(--font-size-m) *
+        var(--font-size-ratio-default)
+    );
+    --typography-body-s-weight: var(--font-weight-normal-default);
+    --typography-body-s-line-height: var(--size-6); /* About 1.5 */
+    --typography-body-s-style: normal;
+    --typography-body-s-decoration: none;
+    --typography-body-s-underline-offset: initial;
+    --typography-body-s-capitalization: none;
+    --typography-body-s-text-align: start;
+    --typography-body-s-overflow-wrap: anywhere;
+    --typography-body-s-word-break: normal;
+    --typography-body-s-hyphens: manual;
+    --typography-body-s-white-space: normal wrap;
+    --typography-body-s-max-width: var(--size-body-m);
+    --typography-body-s-letter-spacing: normal;
+}
